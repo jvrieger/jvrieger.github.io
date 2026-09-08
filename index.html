@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Julia V Rieger — Software Engineer / Creative Technologist</title>
+<meta name="description" content="Julia V Rieger is a software engineer at Hudl with a background in computer graphics. Path tracers, procedural terrain, React interfaces, and billing systems where being off by a cent is a bug.">
+<link rel="canonical" href="https://TODO-your-domain.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Julia V Rieger — Software Engineer / Creative Technologist">
+<meta property="og:description" content="Software engineer at Hudl, trained in computer graphics. Path tracers, procedural terrain, React interfaces, and billing systems where being off by a cent is a bug.">
+<meta property="og:url" content="https://TODO-your-domain.com/">
+<meta property="og:image" content="https://TODO-your-domain.com/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Julia V Rieger — Software Engineer / Creative Technologist">
+<meta name="twitter:description" content="Software engineer at Hudl, trained in computer graphics.">
+<meta name="twitter:image" content="https://TODO-your-domain.com/assets/og.png">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/favicon.svg">
+<meta name="theme-color" content="#17121a">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&display=swap">
+
+<link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Julia V Rieger",
+  "jobTitle": "Software Engineer",
+  "worksFor": { "@type": "Organization", "name": "Hudl" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Bryn Mawr College" },
+    { "@type": "CollegeOrUniversity", "name": "University of Pennsylvania" }
+  ],
+  "knowsAbout": ["Computer graphics", "Rendering", "C++", "OpenGL", "GLSL", "Computer vision", "React", "TypeScript"],
+  "url": "https://TODO-your-domain.com/"
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#index">Skip to the work</a>
+
+<header class="topbar">
+  <a class="topbar-mark" href="#top" aria-label="Julia V Rieger, back to top">
+    <span>JVR</span>
+  </a>
+  <nav class="topbar-nav" aria-label="Sections">
+    <a href="#index">Index</a>
+    <a href="#about">About</a>
+    <a href="#instruments">Instruments</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="topbar-cta" href="assets/Julia-Rieger-Resume.pdf">Résumé <span aria-hidden="true">↓</span></a>
+</header>
+
+<main id="top">
+
+  <!-- ─────────────────────────────  MASTHEAD  ───────────────────────────── -->
+  <section class="masthead">
+    <p class="slug">
+      <span>Software engineer / creative technologist</span>
+      <span class="slug-end">Nebraska, USA</span>
+    </p>
+
+    <h1 class="name" aria-label="Julia V Rieger">
+      <span class="word" aria-hidden="true"><span>J</span><span>u</span><span>l</span><span>i</span><span>a</span></span>
+      <span class="word" aria-hidden="true"><span>V</span></span>
+      <span class="word" aria-hidden="true"><span>R</span><span>i</span><span>e</span><span>g</span><span>e</span><span>r</span></span>
+    </h1>
+
+    <div class="masthead-body">
+      <div class="masthead-text">
+        <p class="lede">
+          Software engineer at <strong>Hudl</strong>, currently on billing systems where being
+          off by a cent is a bug. Trained in <strong>computer graphics</strong> — path tracers,
+          procedural terrain, the behavior of light on a surface.
+        </p>
+        <p class="lede">
+          I like the problems where the implementation and the way it looks are the same question.
+        </p>
+
+        <blockquote class="pull">
+          My software passion is elegant design. I approach problems top-down and begin
+          solutions bottom-up.
+        </blockquote>
+
+        <ul class="quicklinks">
+          <li><a href="assets/Julia-Rieger-Resume.pdf">Résumé <span aria-hidden="true">↓</span></a></li>
+          <li><a href="https://github.com/TODO-your-username">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/TODO-your-handle">LinkedIn</a></li>
+          <li><a href="mailto:TODO@example.com">Email</a></li>
+        </ul>
+
+        <dl class="now">
+          <div>
+            <dt>Now</dt>
+            <dd>Software Engineer I, Hudl</dd>
+          </div>
+          <div>
+            <dt>Before</dt>
+            <dd>M.S.E. Computer Graphics, Penn · B.A. Computer Science, Bryn Mawr</dd>
+          </div>
+        </dl>
+      </div>
+
+      <figure class="render">
+        <div class="render-frame">
+          <canvas id="tracer" width="176" height="220" aria-label="A small path-traced render of a pink sphere on a lit floor, refining in real time"></canvas>
+          <div class="render-overlay">
+            <span class="render-spp" id="spp">spp 0000</span>
+            <button class="render-btn" id="rerender" type="button">Re-render</button>
+          </div>
+        </div>
+        <figcaption>
+          <b>Live.</b> A Monte Carlo path tracer in about two hundred lines of JavaScript —
+          one sphere, one sun, no library. The noise is real; give it a second.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────  TICKER  ───────────────────────────── -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>C++ · GLSL · OpenGL · rendering · Monte Carlo path tracing · procedural terrain · computer vision · React · TypeScript · Salesforce ↔ Workday · creative coding · </span>
+      <span>C++ · GLSL · OpenGL · rendering · Monte Carlo path tracing · procedural terrain · computer vision · React · TypeScript · Salesforce ↔ Workday · creative coding · </span>
+    </div>
+  </div>
+
+  <!-- ─────────────────────────────  INDEX  ───────────────────────────── -->
+  <section class="section index" id="index">
+    <div class="section-head">
+      <p class="label">Index<span class="label-count">9 entries</span></p>
+    </div>
+
+    <div class="filters" role="group" aria-label="Filter the index">
+      <button type="button" class="filter is-on" data-filter="all" aria-pressed="true">All</button>
+      <span class="filter-sep" aria-hidden="true">/</span>
+      <button type="button" class="filter" data-filter="work" aria-pressed="false">Work</button>
+      <span class="filter-sep" aria-hidden="true">/</span>
+      <button type="button" class="filter" data-filter="made" aria-pressed="false">Made</button>
+    </div>
+    <p class="filters-note">
+      <b>Work</b> is production software with other people's money and data in it.
+      <b>Made</b> is the graphics, school, and community work. Both count.
+    </p>
+
+    <div class="index-grid">
+      <ol class="rows" id="rows">
+
+        <!-- W·01 -->
+        <li class="row" data-kind="work" data-plate="billing"
+            data-caption="Billing &amp; contract amendments"
+            data-metrics="~600 amendments · multi-currency · gated rollout">
+          <button class="row-head" type="button" aria-expanded="false" aria-controls="d-w01">
+            <span class="row-idx">W·01</span>
+            <span class="row-title">Billing &amp; contract amendments</span>
+            <span class="row-tag">Integrations</span>
+            <span class="row-venue">Hudl · current</span>
+            <span class="row-plus" aria-hidden="true"></span>
+          </button>
+          <div class="detail" id="d-w01" hidden>
+            <div class="detail-inner">
+              <div class="plate" data-plate="billing" aria-hidden="true">
+                <span class="plate-slug">Plate TK</span>
+                <span class="plate-note">Screenshot / schedule diagram to be added</span>
+              </div>
+              <div class="detail-text">
+                <p class="detail-lede">Proration, billing schedules, and extended-amount math for contract amendments across a Salesforce ↔ Workday integration.</p>
+                <p>Amendments are where billing gets strange: add-ons, rip-and-replace lines, zero-credit
+                cancellations, upgrades and downgrades mid-term, multi-year terms, more than one currency.
+                I implemented and fixed the proration logic, the billing schedule calculations, the
+                extended-amount calculation for rip lines, and billing-method configuration, then ran
+                end-to-end testing across several gated rollout groups with Salesforce and Workday
+                Finance stakeholders as the edge cases surfaced.</p>
+                <p>It helped clear a backlog of roughly <b>600 contract amendments</b> ahead of peak
+                billing season, and unblocked international contract processing for Spain.</p>
+                <ul class="stack">
+                  <li>Salesforce</li><li>Workday</li><li>Billing logic</li><li>E2E testing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- W·02 -->
+        <li class="row" data-kind="work" data-plate="banner"
+            data-caption="Overdue billing banner"
+            data-metrics="React · global nav · config without redeploy">
+          <button class="row-head" type="button" aria-expanded="false" aria-controls="d-w02">
+            <span class="row-idx">W·02</span>
+            <span class="row-title">Overdue billing banner</span>
+            <span class="row-tag">Full-stack</span>
+            <span class="row-venue">Hudl · current</span>
+            <span class="row-plus" aria-hidden="true"></span>
+          </button>
+          <div class="detail" id="d-w02" hidden>
+            <div class="detail-inner">
+              <div class="plate" data-plate="banner" aria-hidden="true">
+                <span class="plate-slug">Plate TK</span>
+                <span class="plate-note">Banner screenshot to be added</span>
+              </div>
+              <div class="detail-text">
+                <p class="detail-lede">A customer-facing overdue-billing notice, built end to end into Hudl's global navigation.</p>
+                <p>Different messaging for admins than for coaches, navigation and backend plumbing
+                underneath, and a configuration surface so the billing team can update which school IDs
+                see the notice without waiting on a redeploy. I built the React
+                <code>OverdueBillingBanner</code> component and the navigation and configuration changes
+                around it, deployed and demoed it across systems, and got stakeholder sign-off to merge.</p>
+                <p>I picked this one up on my own. It is the clearest example of me working
+                product-first: the interesting part was deciding what a coach should see.</p>
+                <ul class="stack">
+                  <li>React</li><li>TypeScript</li><li>Global navigation</li><li>Feature config</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- W·03 -->
+        <li class="row" data-kind="work" data-plate="reviewer"
+            data-caption="Money-Math Reviewer"
+            data-metrics="Internal dev tool · 6 rule families · merged">
+          <button class="row-head" type="button" aria-expanded="false" aria-controls="d-w03">
+            <span class="row-idx">W·03</span>
+            <span class="row-title">Money-Math Reviewer</span>
+            <span class="row-tag">Dev tooling</span>
+            <span class="row-venue">Hudl · current</span>
+            <span class="row-plus" aria-hidden="true"></span>
+          </button>
+          <div class="detail" id="d-w03" hidden>
+            <div class="detail-inner">
+              <div class="plate" data-plate="reviewer" aria-hidden="true">
+                <span class="plate-slug">Plate TK</span>
+                <span class="plate-note">Reviewer output / demo capture to be added</span>
+              </div>
+              <div class="detail-text">
+                <p class="detail-lede">An internal AI reviewer that reads changes to billing-calculator code and flags financial-math bugs.</p>
+                <p>Built as part of Hudl's Claude Code experimentation initiative. It looks for
+                floating-point types on money paths, installment splits that don't reconcile to their
+                total, inconsistent rounding modes, unrounded division on persisted amounts,
+                date-boundary errors, and missing exact-amount tests. The rules are grounded in the
+                actual codebase rather than in generic advice about money.</p>
+                <p>For the demo I planted a real billing bug and let the reviewer find it. Merged, along
+                with a proposal to look at the approach more widely.</p>
+                <p>I like this one because the AI is doing something specific and checkable, which is
+                the only version of it I find interesting.</p>
+                <ul class="stack">
+                  <li>Claude Code</li><li>Static analysis</li><li>Billing domain rules</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- W·04 -->
+        <li class="row" data-kind="work" data-plate="integrations"
+            data-caption="Salesforce ↔ Workday integrations"
+            data-metrics="6 integrations · 2 enterprise data models">
+          <button class="row-head" type="button" aria-expanded="false" aria-controls="d-w04">
+            <span class="row-idx">W·04</span>
+            <span class="row-title">Salesforce ↔ Workday integrations</span>
+            <span class="row-tag">Systems</span>
+            <span class="row-venue">Hudl · current</span>
+            <span class="row-plus" aria-hidden="true"></span>
+          </button>
+          <div class="detail" id="d-w04" hidden>
+            <div class="detail-inner">
+              <div class="plate" data-plate="integrations" aria-hidden="true">
+                <span class="plate-slug">Plate TK</span>
+                <span class="plate-note">Integration / data-flow diagram to be added</span>
+              </div>
+              <div class="detail-text">
+                <p class="detail-lede">Customer groups, customer roles, invoice notes, invoice status logging, invoice date parsing, purchase order numbers.</p>
+                <p>Two enterprise systems with different data models, different failure modes, and a lot
+                of assumptions in between. On customer-group sync I found that Salesforce's display-name
+                values didn't match the internal IDs Workday expected — so rather than build the
+                integration as written, I diffed the datasets, took the mismatch to stakeholders, and
+                implemented the mapping. On customer-role sync the integration was correct but never
+                completing; I traced it to a silent approval-routing issue inside Workday.</p>
+                <p>Most of this work is debugging across systems rather than inside one codebase, which
+                turns out to be a skill of its own.</p>
+                <ul class="stack">
+                  <li>REST APIs</li><li>Data mapping</li><li>Salesforce</li><li>Workday</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- W·05 -->
+        <li class="row" data-kind="work" data-plate="reconcile"
+            data-caption="Admin ↔ Salesforce reconciliation"
+            data-metrics="~8,000 discrepancies · state &amp; country normalization">
+          <button class="row-head" type="button" aria-expanded="false" aria-controls="d-w05">
+            <span class="row-idx">W·05</span>
+            <span class="row-title">Admin ↔ Salesforce reconciliation</span>
+            <span class="row-tag">Data</span>
+            <span class="row-venue">Hudl · current</span>
+            <span class="row-plus" aria-hidden="true"></span>
+          </button>
+          <div class="detail" id="d-w05" hidden>
+            <div class="detail-inner">
+              <div class="plate" data-plate="reconcile" aria-hidden="true">
+                <span class="plate-slug">Plate TK</span>
+                <span class="plate-note">Before / after data sample to be added</span>
+              </div>
+              <div class="detail-text">
+                <p class="detail-lede">Roughly 8,000 discrepancies between Salesforce and an aging Hudl Admin database.</p>
+                <p>I wrote the query that identified the discrepancies, prepared sample data including the
+                edge cases, standardized state and country values to match Salesforce, and coordinated
+                approval with the teams who owned the records before anything moved.</p>
+                <p>Unglamorous and entirely about being careful, which is most of what data migration is.</p>
+                <ul class="stack">
+                  <li>SQL</li><li>Data quality</li><li>Migration planning</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- M·01 -->
+        <li class="row" data-kind="made" data-plate="pbr"
+            data-caption="Monte Carlo path tracer"
+            data-metrics="C++ / OpenGL / GLSL · MIS · JSON scenes">
+          <button class="row-head" type="button" aria-expanded="false" aria-controls="d-m01">
+            <span class="row-idx">M·01</span>
+            <span class="row-title">Monte Carlo path tracer</span>
+            <span class="row-tag">Graphics</span>
+            <span class="row-venue">Penn</span>
+            <span class="row-plus" aria-hidden="true"></span>
+          </button>
+          <div class="detail" id="d-m01" hidden>
+            <div class="detail-inner">
+              <div class="plate" data-plate="pbr" aria-hidden="true">
+                <span class="plate-slug">Plate TK</span>
+                <span class="plate-note">Renders to be added — this is the one to go big on</span>
+              </div>
+              <div class="detail-text">
+                <p class="detail-lede">A physically based renderer in C++ with OpenGL and GLSL.</p>
+                <p>Monte Carlo path tracing with diffuse, specular, and transmissive materials;
+                microfacet BSDFs; environment-map global illumination; area, point, and spot lights;
+                multiple importance sampling; and custom JSON scene descriptions.</p>
+                <p>The render at the top of this page is a much smaller cousin — a few hundred lines of
+                JavaScript, one sphere, one sun — but the idea is identical: fire rays, average what
+                comes back, wait for the noise to go away.</p>
+                <ul class="stack">
+                  <li>C++</li><li>OpenGL</li><li>GLSL</li><li>Importance sampling</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- M·02 -->
+        <li class="row" data-kind="made" data-plate="terrain"
+            data-caption="Mini-Minecraft"
+            data-metrics="Procedural terrain · 2D &amp; 3D noise · post-process pass">
+          <button class="row-head" type="button" aria-expanded="false" aria-controls="d-m02">
+            <span class="row-idx">M·02</span>
+            <span class="row-title">Mini-Minecraft</span>
+            <span class="row-tag">Graphics</span>
+            <span class="row-venue">Penn · team</span>
+            <span class="row-plus" aria-hidden="true"></span>
+          </button>
+          <div class="detail" id="d-m02" hidden>
+            <div class="detail-inner">
+              <div class="plate" data-plate="terrain" aria-hidden="true">
+                <span class="plate-slug">Plate TK</span>
+                <span class="plate-note">Terrain / cave screenshots to be added</span>
+              </div>
+              <div class="detail-text">
+                <p class="detail-lede">A team-built 3D world you can walk through and change.</p>
+                <p>My parts: procedural terrain from 2D noise, 3D noise for the cave systems, biome
+                generation, procedural asset placement, the camera overlay, and the post-process
+                rendering pipeline.</p>
+                <p>Terrain generation is the most fun kind of engineering — you tune a number, and a
+                landscape you've never seen appears.</p>
+                <ul class="stack">
+                  <li>C++</li><li>OpenGL</li><li>GLSL</li><li>Noise functions</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- M·03 -->
+        <li class="row" data-kind="made" data-plate="vision"
+            data-caption="Computer vision thesis"
+            data-metrics="Senior thesis · conference presentation">
+          <button class="row-head" type="button" aria-expanded="false" aria-controls="d-m03">
+            <span class="row-idx">M·03</span>
+            <span class="row-title">Computer vision thesis</span>
+            <span class="row-tag">Vision</span>
+            <span class="row-venue">Bryn Mawr</span>
+            <span class="row-plus" aria-hidden="true"></span>
+          </button>
+          <div class="detail" id="d-m03" hidden>
+            <div class="detail-inner">
+              <div class="plate" data-plate="vision" aria-hidden="true">
+                <span class="plate-slug">Plate TK</span>
+                <span class="plate-note">Figure from the thesis to be added</span>
+              </div>
+              <div class="detail-text">
+                <p class="detail-lede">Senior thesis in computer vision, presented at a conference.</p>
+                <p class="todo"><b>TODO — Julia:</b> add the topic, the method, and the result in two or
+                three sentences, plus a link to the paper or the slides. Name the conference if you're
+                happy to. This entry is one of the fastest wins on the whole site.</p>
+                <ul class="stack">
+                  <li>Computer vision</li><li>Research</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- M·04 -->
+        <li class="row" data-kind="made" data-plate="community"
+            data-caption="Girls Get Together"
+            data-metrics="200+ attendees · virtual event">
+          <button class="row-head" type="button" aria-expanded="false" aria-controls="d-m04">
+            <span class="row-idx">M·04</span>
+            <span class="row-title">Girls Get Together</span>
+            <span class="row-tag">Community</span>
+            <span class="row-venue">TODO · year</span>
+            <span class="row-plus" aria-hidden="true"></span>
+          </button>
+          <div class="detail" id="d-m04" hidden>
+            <div class="detail-inner">
+              <div class="plate" data-plate="community" aria-hidden="true">
+                <span class="plate-slug">Plate TK</span>
+                <span class="plate-note">Event or site imagery to be added</span>
+              </div>
+              <div class="detail-text">
+                <p class="detail-lede">A virtual Girls Get Together with more than 200 attendees, plus websites and initiatives for underserved communities in STEM.</p>
+                <p class="todo"><b>TODO — Julia:</b> add the year, the organization, what you actually
+                built or ran, and links to the sites. Right now this is the thinnest entry and it
+                deserves better.</p>
+                <ul class="stack">
+                  <li>Web</li><li>Event production</li><li>STEM outreach</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!--
+          ── ADDING AN ENTRY ─────────────────────────────────────────────
+          Copy any <li class="row"> above and change:
+            data-kind      "work" or "made"          (drives the filter)
+            data-plate     a key from styles.css     (drives the plate color)
+            data-caption   title shown in the viewer
+            data-metrics   the one-line slate under the viewer
+            aria-controls  + the matching id on .detail  (must be unique)
+          Then bump the "9 entries" count in .label-count.
+          ────────────────────────────────────────────────────────────────
+        -->
+      </ol>
+
+      <aside class="viewer" aria-hidden="true">
+        <div class="viewer-sticky">
+          <div class="plate" id="viewerPlate" data-plate="billing">
+            <span class="plate-slug">Plate TK</span>
+            <span class="plate-note">Art to be added</span>
+          </div>
+          <p class="viewer-caption" id="viewerCaption">Billing &amp; contract amendments</p>
+          <p class="viewer-metrics" id="viewerMetrics">~600 amendments · multi-currency · gated rollout</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────  ABOUT  ───────────────────────────── -->
+  <section class="section about" id="about">
+    <div class="section-head">
+      <p class="label">About<span class="label-count">Houston → Philadelphia → Nebraska</span></p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 class="h2">Computer science, then graphics, then production software — in that order, and none of it left behind.</h2>
+        <p>I started in computer science at Bryn Mawr, went sideways into computer graphics and game
+        technology at Penn, and came back around to building software people actually depend on.</p>
+        <p>Those aren't separate skills for me. Graphics taught me to care about correctness at the level
+        of a single float, and that a thing also has to <em>look</em> right, not only compute right.
+        Billing taught me the same lesson with money attached: a rounding mode is an aesthetic decision
+        right up until someone gets the wrong invoice.</p>
+        <p>Mostly I just like making things and finding out how they work.</p>
+      </div>
+
+      <div class="about-side">
+        <figure class="portrait">
+          <div class="portrait-frame">
+            <span class="plate-slug">Portrait TK</span>
+            <span class="plate-note">Drop a photo at assets/julia.jpg — one is plenty</span>
+          </div>
+          <figcaption>Optional, and deliberately small. The work is the point.</figcaption>
+        </figure>
+
+        <dl class="edu">
+          <div>
+            <dt>Hudl</dt>
+            <dd>Software Engineer I <span>· current</span></dd>
+          </div>
+          <div>
+            <dt>University of Pennsylvania</dt>
+            <dd>M.S.E. Computer Graphics &amp; Game Technology <span>· coursework, degree not completed</span></dd>
+          </div>
+          <div>
+            <dt>Bryn Mawr College</dt>
+            <dd>B.A. Computer Science <span>· senior thesis in computer vision</span></dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────  INSTRUMENTS  ───────────────────────────── -->
+  <section class="section instruments" id="instruments">
+    <div class="section-head">
+      <p class="label">Instruments<span class="label-count">What I reach for, and for what</span></p>
+    </div>
+
+    <ul class="kit">
+      <li><h3>C++</h3><p>Renderers and real-time graphics. Where I learned to care about memory and float precision.</p></li>
+      <li><h3>GLSL / OpenGL</h3><p>Shaders, post-process pipelines, the parts of the frame that happen after the geometry.</p></li>
+      <li><h3>React / TypeScript</h3><p>Product interfaces people click on, including ones inside Hudl's global navigation.</p></li>
+      <li><h3>JavaScript</h3><p>Creative coding, small experiments, and the path tracer at the top of this page.</p></li>
+      <li><h3>Computer vision</h3><p>Thesis work at Bryn Mawr, and a lasting interest in getting meaning out of pixels.</p></li>
+      <li><h3>Salesforce / Workday</h3><p>Enterprise integrations, billing logic, and the specific patience that requires.</p></li>
+    </ul>
+    <!-- TODO — Julia: add or remove instruments freely. Six reads better than twelve. -->
+  </section>
+
+  <!-- ─────────────────────────────  CONTACT  ───────────────────────────── -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <p class="label label-on-pink">Contact<span class="label-count">Open to new roles</span></p>
+      <a class="contact-email" href="mailto:TODO@example.com">TODO@example.com</a>
+      <p class="contact-note">
+        I'm looking at software engineering and product / creative-technology roles right now.
+        If you have one — or you just want to argue about rounding modes or importance sampling —
+        I'd like to hear from you.
+      </p>
+      <ul class="contact-links">
+        <li><a href="assets/Julia-Rieger-Resume.pdf">Résumé <span aria-hidden="true">↓</span></a></li>
+        <li><a href="https://github.com/TODO-your-username">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/TODO-your-handle">LinkedIn</a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="colophon">
+  <p><b>Julia V Rieger</b> — software engineer / creative technologist. Nebraska, USA.</p>
+  <p>Set in Syne, Instrument Sans, and DM Mono. Plain HTML, CSS, and JavaScript; no framework and no
+  build step. The masthead is a Monte Carlo path tracer running in your browser.</p>
+  <p class="colophon-end"><span>© <span id="year">2026</span></span><a href="#top">Back to top <span aria-hidden="true">↑</span></a></p>
+</footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>

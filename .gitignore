@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+._*
+
+# editors
+.vscode/
+.idea/
+
+# nothing here needs a build step, but just in case
+node_modules/
+dist/
+.cache/
